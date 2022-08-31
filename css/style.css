@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-green: #244D4D;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+    font-family: sans-serif;
+}
+h1,h2,h3{
+    font-family: 'Noto Serif JP', serif;
+    color: var(--main-green);
+}
+h1{
+    font-size: 54px;
+    font-weight: 900;
+}
+h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+h3{
+    font-size: 50px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+    outline: none;
+}
