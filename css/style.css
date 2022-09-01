@@ -23,7 +23,7 @@ h1{
     font-weight: 900;
 }
 h2{
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 h3{
@@ -149,11 +149,11 @@ button{
 
 /* CLIENTS START */
 .clients{
-    margin: 80px 0;
+    margin: 80px 0 0;
     background-color: #F4F6F6;
 }
 .clients .container{
-    padding: 60px 0;
+    padding: 60px 0 ;
 }
 .clients span{
     display: inline-block;
@@ -172,3 +172,49 @@ button{
     padding: 0 15px;
 }
 /* CLIENTS END */
+
+/* DEALS START */
+.deals{
+    padding: 80px 0;
+}
+.deals .container{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; */
+    display: grid;
+    grid-template-columns:  1.5fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+.deals-heading h2{
+    margin-bottom: 30px;
+}
+.deals-heading p{
+    color: #5F5F64;
+    line-height: 1.5;
+}
+.deal{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.deal img{
+    width: 40px;
+}
+.deal span{
+    color: #3D3D3F;
+    font-size: 20px;
+    font-weight: 600;
+}
+.deal p{
+    font-size: 16px;
+    color: #5F5F64;
+    line-height: 1.5;
+}
+@media screen and (max-width: 750px){
+    .deals .container{
+        grid-template-columns: 0.8fr;
+        justify-content: center;
+    }
+}
+/* DEALS END */
