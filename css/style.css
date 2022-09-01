@@ -19,7 +19,7 @@ h1,h2,h3{
     color: var(--main-green);
 }
 h1{
-    font-size: 54px;
+    font-size: 3rem;
     font-weight: 900;
 }
 h2{
@@ -47,6 +47,8 @@ button{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
+    background-color: #ffffff;
 }
 .navbar .container{
     display: flex;
@@ -92,3 +94,53 @@ button{
     }
 }
 /* NAVBAR END */
+
+/* HEADER START */
+.header{
+    margin-top: 100px;
+}
+.header .container{
+    background-image: url('../images/header-img.png');
+    background-size: cover;
+    min-height: 800px;
+    position: relative;
+    background-position: center;
+}
+.header-content{
+    background-color: #ffffff;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.header-content .content{
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(50px);
+    position: absolute;
+    width: 500px;
+    padding: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header-content .content h1{
+    margin-bottom: 30px;
+}
+.header-content .content p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #5F5F64;
+}
+@media screen and (max-width: 750px){
+    .header, .header .container{
+        width: 100%;
+    }
+    .header-content{
+        width: 100%;
+        background-color: transparent;
+    }
+    .header-content .content{
+        padding: 30px;
+    }
+}
+/* HEADER END */
