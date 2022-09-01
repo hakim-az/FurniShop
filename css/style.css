@@ -141,6 +141,34 @@ button{
     }
     .header-content .content{
         padding: 30px;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 /* HEADER END */
+
+/* CLIENTS START */
+.clients{
+    margin: 80px 0;
+    background-color: #F4F6F6;
+}
+.clients .container{
+    padding: 60px 0;
+}
+.clients span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.clients-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.clients-logo img{
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+/* CLIENTS END */
