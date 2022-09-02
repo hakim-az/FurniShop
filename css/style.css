@@ -492,3 +492,104 @@ button{
     }
 }
 /* TESTMONIALS END */
+
+/* FOOTER START */
+.footer{
+    background-color: #244D4D;
+    padding: 60px 0;
+}
+.top-footer{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #3A5F5F;
+}
+.top-footer p{
+    color: #ffffff;
+    font-size: 45px;
+    width: 50%;
+}
+.top-footer .first button{
+    width: 200px;
+    height: 60px;
+    background: #FCFBFF;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 19px;
+    text-align: center;
+    color: #244D4D;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.top-footer .second button{
+    width: 200px;
+    height: 60px;
+    background: #3A5F5F;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 19px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+.bottom-footer{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bottom-footer .col:first-child{
+    width: 20%;
+    min-width: 200px;
+}
+.bottom-footer .col:first-child p{
+    padding: 30px 0;
+    color: #EEEEEE;
+    line-height: 1.5;
+}
+.bottom-footer .col{
+    margin-bottom: 40px;
+    min-width: 150px;
+}
+.social-icons i{
+    color: #ffffff;
+    margin-right: 15px;
+}
+.bottom-footer .col span{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    display: block;
+}
+.bottom-footer .col li{
+    padding: 10px 0;
+}
+.bottom-footer .col a{
+    color: #EEEEEE;
+}
+@media screen and (max-width: 950px){
+    .top-footer{
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .top-footer p{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 800px){
+    .bottom-footer .col:first-child{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 500px){
+    .top-footer .first button{
+        margin: 0 0 30px 0;
+    }
+}
+/* FOOTER END */
